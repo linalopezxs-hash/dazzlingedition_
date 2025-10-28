@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dazzling Edition</title>
+<style>
+
+  body {background- color: purple;padding:30px;font-family:verdana;}
+
+    #menu{
+     background-color: #c5c3f7;
+    }
+
+    #menu ul { 
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    #menu ul li{
+
+      display: inline-block;
+    }
+ #menu ul li a {
+    
+    color:#333333  ;
+    display: block;
+    padding: 10px 60px ;
+    font-size: 18px;o
+    font-weight: 600;
+    letter-spacing: 0px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+ }
+
+ #menu ul li a:hover {
+    background-color: #c4e8f7;
+ 
+ }
+
+ .item-r {   
+float: right;
+  }
+
+    </style>
+    <head>
+    <body>
+  <!-- Banner -->
+  <div style="width: 100%; text-align: center;">
+    <img src="Banner dazzling.jpg" alt="Banner Dazzling" style="max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 10px;">
+  </div>
+
+  <!-- Menú -->
+  <div id="menu">
+    <ul style="list-style: none; display: flex; justify-content: center; gap: 30px; padding: 0; margin: 20px 0;">
+      <li class="item-y"><a href="index.html">Inicio</a></li>
+      <li class="item-y"><a href="Quienes Somos.html">Quienes Somos</a></li>
+      <li class="item-y"><a href="Portafolio de servicios.html">Portafolio de servicios</a></li>
+      <li class="item-r"><a href="Producto.html">Producto</a></li>
+      <li class="item-r"><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+</body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dazzling Edition - Contacto</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    /* --- Animación tipo portafolio --- */
+    @keyframes fadeIn {
+      from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+      }
+      to { 
+        opacity: 1; 
+        transform: translateY(0); 
+      }
+    }
+
+    /* --- Sección de contacto con transición --- */
+    .contact-section {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 60px 30px;
+      background: #ffffff;
+      border-radius: 30px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .contact-section::before {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -80px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, #c4e8f7, #7c3aed);
+      border-radius: 50%;
+      opacity: 0.15;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .contact-section::after {
+      content: '';
+      position: absolute;
+      bottom: -125px;
+      left: -80px;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, #c084fc, #7c3aed);
+      border-radius: 50%;
+      opacity: 0.15;
+      animation: fadeIn 2s ease-out;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 3em;
+      color: #FA99E1;
+      margin-bottom: 10px;
+      animation: fadeIn 1.8s ease-out;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 50px;
+      animation: fadeIn 2.1s ease-out;
+    }
+
+    .contact-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      animation: fadeIn 2.3s ease-out;
+    }
+
+    .card {
+      background: linear-gradient(to bottom right, #f3f0ff, #fdfdff);
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      padding: 30px 25px;
+      width: 280px;
+      text-align: center;
+      transition: all 0.4s ease;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .icon {
+      font-size: 50px;
+      margin-bottom: 15px;
+      color: #9333ea;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .info-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #FA99E1;
+      margin-bottom: 8px;
+    }
+
+    .info-text a {
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+      transition: all 0.4s ease;
+      font-weight: 500;
+    }
+
+    .info-text a:hover {
+      background: linear-gradient(90deg, #30B2FF, #30B2FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    @media (max-width: 768px) {
+      .contact-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="contact-section">
+    <h2>&iexcl;Hablemos!</h2>
+    <p class="subtitle">Estamos listos para capturar tus momentos m&aacute;s deslumbrantes &#128247;</p>
+
+    <div class="contact-cards">
+
+      <div class="card">
+        <div class="icon">&#128231;</div>
+        <div class="info-title">Correo</div>
+        <div class="info-text">
+          <a href="mailto:dazzlingedition@gmail.com">dazzlingedition@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon">&#128241;</div>
+        <div class="info-title">WhatsApp</div>
+        <div class="info-text">
+          <a href="https://wa.me/573203695173" target="_blank">320 369 5173</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="icon">&#128222;</div>
+        <div class="info-title">Tel&eacute;fono</div>
+        <div class="info-text">
+          <a href="tel:3213917385">321 391 7385</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
+
+
+
+
+<footer style="background-color: #c4e8f7; color: black; text-align: center; padding: 10px;">
+  <p class="mb-2">&copy; 2025 Dazzling Edition. Todos los derechos reservados.</p>
+  
+</footer>
+</html>
+
